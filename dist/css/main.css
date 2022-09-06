@@ -1,0 +1,104 @@
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss ***!
+  \*************************************************************************************************************/
+.wp-gumonet-image-slider {
+  position: relative;
+  /* Next & previous buttons */
+  /*#wp-g-is-prev{
+    position: absolute;
+    top: 43%;
+    left: 0;
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  #wp-g-is-next{
+    position: absolute;
+    top: 43%;
+    right: 0;
+    cursor: pointer;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }*/
+  /* We create this class with JavaScript. It makes the current dot darker gray */
+  /* create fade animation when switching between images */ }
+  .wp-gumonet-image-slider .wp-g-is-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden; }
+  .wp-gumonet-image-slider .wp-g-is-carousel-control-prev, .wp-gumonet-image-slider .wp-g-is-carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: none;
+    border: 0;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+    cursor: pointer; }
+    .wp-gumonet-image-slider .wp-g-is-carousel-control-prev:hover, .wp-gumonet-image-slider .wp-g-is-carousel-control-next:hover {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: 0.9; }
+    .wp-gumonet-image-slider .wp-g-is-carousel-control-prev span, .wp-gumonet-image-slider .wp-g-is-carousel-control-next span {
+      font-size: 1rem; }
+  .wp-gumonet-image-slider .wp-g-is-carousel-control-next {
+    right: 0; }
+  .wp-gumonet-image-slider .wp-g-is-image {
+    display: none;
+    width: 100%; }
+  .wp-gumonet-image-slider .wp-g-is-image {
+    display: none;
+    width: 100%; }
+  .wp-gumonet-image-slider .wp-g-is-dots {
+    text-align: center;
+    margin-top: 2%; }
+  .wp-gumonet-image-slider .wp-g-is-dot {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    /* transition from one do to the next */
+    transition: background-color 0.6s ease; }
+  .wp-gumonet-image-slider .wp-g-is-active {
+    background-color: #717171; }
+  .wp-gumonet-image-slider .wp-g-is-fade {
+    /* Animation support for different browsers */
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
